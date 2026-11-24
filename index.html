@@ -80,6 +80,18 @@
   .preuves{display:grid;gap:14px;margin-top:28px}
   .preuve{border-left:4px solid var(--orange);padding:6px 0 6px 18px;font-size:19px;font-weight:500}
 
+  /* Limova */
+  .top{flex-wrap:wrap}
+  .par-limova{margin-left:auto;display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--doux);font-size:13px}
+  .par-limova img{height:22px;width:auto}
+  .bandeau{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+  .bandeau div{background:#fff;border:1px solid var(--sable);border-radius:18px;padding:16px}
+  .bandeau b{display:block;font-family:"Bricolage Grotesque";font-size:22px;color:var(--orange-fonce)}
+  .bandeau span{font-size:14px;color:var(--doux)}
+  .limova{background:#fff;border:1px solid var(--sable);border-radius:28px;padding:32px 24px}
+  .limova-logo{height:34px;width:auto;margin-bottom:18px}
+  @media (min-width:820px){.bandeau{grid-template-columns:repeat(4,1fr)}.limova{padding:48px}}
+
   /* final */
   .final{background:var(--nuit);color:#fff;border-radius:28px;padding:44px 24px;margin:64px 0 24px;display:grid;gap:22px;align-items:center}
   .final img{width:96px;height:96px;border-radius:50%;border:4px solid var(--orange)}
@@ -114,6 +126,7 @@
   <header class="top">
     <img src="img/charly.jpg" alt="">
     <div><b>Charly</b> <span>· assistante IA du BTP</span></div>
+    <a class="par-limova" href="https://limova.ai" target="_blank" rel="noopener"><span>par</span><img src="img/limova-logo.png" alt="Limova"></a>
   </header>
 
   <div class="hero">
@@ -129,6 +142,13 @@
         <video src="videos/00-couvreur.mp4" poster="img/poster-couvreur.jpg" controls playsinline preload="none"></video>
       </div>
     </div>
+  </div>
+
+  <div class="bandeau">
+    <div><b>+ de 35 000</b><span>pros utilisent Limova au quotidien</span></div>
+    <div><b>OpenAI</b><span>Limova 3 co-développée avec OpenAI</span></div>
+    <div><b>Nice</b><span>une équipe qui t'accompagne pas à pas</span></div>
+    <div><b>Française</b><span>entreprise française d'agents IA</span></div>
   </div>
 
   <section>
@@ -173,11 +193,16 @@
   </section>
 
   <section>
-    <h2>Qui est derrière Charly ?</h2>
-    <div class="preuves">
-      <p class="preuve">Limova, l'entreprise française d'agents IA, basée à Nice.</p>
-      <p class="preuve">Aujourd'hui, plus de 35 000 pros utilisent Limova au quotidien.</p>
-      <p class="preuve">Limova 3 a été co-développée avec OpenAI.</p>
+    <div class="limova">
+      <img class="limova-logo" src="img/limova-logo.png" alt="Limova">
+      <h2>Charly, c'est l'assistante de Limova.</h2>
+      <p class="chapo">Limova est une entreprise française d'agents IA, basée à Nice. Charly fait le travail directement dans tes outils, et tu la pilotes depuis WhatsApp, par écrit ou en vocal.</p>
+      <div class="preuves">
+        <p class="preuve">Aujourd'hui, plus de 35 000 pros utilisent Limova au quotidien.</p>
+        <p class="preuve">Limova 3 a été co-développée avec OpenAI.</p>
+        <p class="preuve">Notre équipe basée à Nice t'accompagne pas à pas dans la mise en place.</p>
+        <p class="preuve">Tu gardes la main : tu reçois le résumé de chaque appel, et les urgences te sont transférées.</p>
+      </div>
     </div>
   </section>
 
